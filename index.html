@@ -1,0 +1,74 @@
+<!--
+
+Open Sesame
+
+One of the stories included in One Thousand and One Nights is the tale of Ali Baba and the Forty Thieves. Ali Baba hides a vast treasure in a cave, hidden behind a boulder. To open the cave, he speaks the magical words, "Open Sesame!"
+
+You are an IT consultant for a group of **good**, Robinhood-esque, white hat hackers. You are tasked with building a security system for them. Using HTML form tags, build a series of questions and checks that the user must answer correctly in order to gain access to the group's database.
+
+Use your imagination! You can include: riddles, trivia, math questions, multiple choice questions, color blind tests, keyfile upload tests, puzzles, etc.
+
+- Place one question / test per html page
+- Include at least 5 html pages
+- Use at least 5 different input tags, including textarea and select
+- Remember to use the form tag, submit button, and action attribute
+  - The action attribute should point to the next page
+
+Note: for now, there is no way to check if the user has entered the correct answer. You can just assume that they get it correct.
+
+Don't forget that you can use the APIs!
+-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <!-- play in the background -->
+  <audio autoplay loop>
+    <source src= "Beyond Time.mp3"
+     type="audio/mpeg" />
+  </audio>
+  <audio control>
+    <source src="Beyond Time.mp3
+      type="audio/mpeg"/>
+  </audio>
+  <header><strong>
+      <h1 style="background-color:DodgerBlue;">Journey Through Ancient Egypt</h1>
+    </strong></header>
+  <img src="https://s27363.pcdn.co/wp-content/uploads/2020/04/Camel-Ride.jpg.optimal.jpg" width=600 />
+  <form action="riddle_2.html">
+    <p><b>You arrive in Egypt with your family on a treasure hunt. You must solve the riddles in order to enter the pyraimds.</b></p>
+    <br />
+    <p><b>You Bury me when Im alive and you dig me up when I die. What am I?</b></p>
+    <br />
+    <input type="radio" id="riddle_1" name="riddle" value="shovel" />
+    <label for="riddle_1">
+      A Shovel
+    </label>
+    <br />
+    <br />
+    <input type="radio" id="riddle_2" name="riddle" value="plant" />
+    <label for="riddle_2">
+      A Plant
+    </label>
+    <br />
+    <br />
+    <input type="radio" id="riddle_3" name="riddle" value="treasure" />
+    <label for="riddle_3">
+      A Fossil
+    </label>
+    <br />
+    <br />
+    <input type="radio" id="riddle_4" name="riddle" value="seeds" />
+    <label for="riddle_4">
+      Seeds
+    </label>
+    <br />
+    <br />
+    <button type="submit">
+      Check
+    </button>
+  </form>
+</body>
+
+</html>
